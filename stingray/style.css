@@ -1,0 +1,152 @@
+body{
+  padding-top:50px;
+}
+/* globe animation */
+@keyframes movement {
+  from{
+    motion-offset: 0%;
+  }
+  to{
+    motion-offset: 100%;
+  }
+}
+@keyframes reverse_movement {
+  from{
+    motion-offset: 100%;
+  }
+  to{
+    motion-offset: 0%;
+  }
+}
+.translate-header, .continents{
+  motion-path: path("M100 180 L300 180");
+  animation: movement 4s alternate infinite ease-in-out;
+}
+.continents{
+  fill:#2fafe6;
+  stroke:#2fafe6;
+  motion-path: path("M-473 0 L0 0");
+}
+#back{
+  opacity:0.2;
+  animation-name: reverse_movement;
+}
+/* Logo animation */
+#logo path {
+  transform-origin:center;
+  transition: .5s ease-in-out;
+}
+#logo{
+  transform-origin:center;
+  /*transform:rotate(-90deg);*/
+}
+#logo:hover {
+  transform:rotate(0deg);
+}
+
+nav:hover #logo #triangle-right, #logo.shrink #triangle-right{
+  transform:translateX(10px);
+}
+nav:hover #logo #triangle-left, #logo.shrink #triangle-left {
+  transform:translateX(13px)scale(0.8);
+}
+nav:hover #logo #rectangle-main, #logo.shrink #rectangle-main{
+  transform:scale(0.4);
+}
+nav:hover #logo #rectangle-outer, #logo.shrink #rectangle-outer{
+  transform:translateX(-10px);
+}
+nav:hover #logo #rectangle-inner, #logo.shrink #rectangle-inner{
+  transform:translateX(-15px);
+}
+
+#logo{
+}
+.navbar{
+}
+.navbar-brand{
+}
+/* title style */
+section.title{
+  background:#0b2f45;
+  margin:-20px 0 30px 0;
+  height:800px; /* for opera / ie8 */
+  height:80vh;
+  min-height:800px;
+  padding:0px 0 5px 0;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+}
+section.title #logo{
+  height:400px;
+  height:40vh;
+  margin-top:50px;
+  transition: height 0.1s linear;
+}
+section.title #logo svg{
+  width:auto;
+  max-height:100%;
+  display:block;
+}
+section.title #logo.shrink{
+}
+section.title h1 {
+  color:white;
+  font-size:40px;
+  text-align:center;
+}
+#scroll-icon{
+  margin:auto;
+  text-align:center;
+  color:white;
+  font-size:48px;
+  transform:scaleX(1.5);
+  opacity:0.7;
+  animation:glow 1s infinite alternate;
+}
+@keyframes glow{
+  from{
+    opacity:0.9;
+  }
+  to{
+    opacity:0.2;
+  }
+}
+#logo.shrink #scroll-icon{
+  display:none;
+}
+section.title #header-bottom{
+  position:absolute;
+  bottom:50px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+section.title #header-actions a{
+  margin:10px;
+}
+section.title #header-desc{
+  font-size:1.5em;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+/* cards */
+.card-cell{
+  width:25%;
+  min-width:200px;
+  display:flex;
+  padding:4px;
+}
+.card{
+  border-radius: 4px;
+  padding:4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+}
+.card:hover{
+
+}

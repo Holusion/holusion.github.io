@@ -17,7 +17,7 @@ lang: en
 </head>
 <body>
   <section id="section-jumbotron">
-    <div style="width:100%;height:300px;background:url('/build/img/products/focus_vivatech_bandeau_2x.jpg') center/cover;margin-bottom:-75px;"></div>
+    <div style="width:100%;height:300px;background:url('/static/img/focus_vivatech_bandeau_2x.jpg') center/cover;margin-bottom:-75px;"></div>
   </section>
   <section id="section-main" >
     <div id="content" class="container page-shadow">
@@ -25,9 +25,15 @@ lang: en
       <div class="row">
         {% include post_thumbnail.html
           url="stingray"
-           image="/stingray/img/logo.svg"
-           title="stingray"
-           abstract="Stingray is a new generation video player designed to interact with rich video content" %}
+          image="/stingray/img/logo.svg"
+          title="stingray"
+          abstract="Stingray is a new generation video player designed to interact with rich video content" %}
+
+       {% include post_thumbnail.html
+         url="https://holusion.com"
+         image="/static/img/logo_16-9.png"
+         title="holusion"
+         abstract="Commercial presentation of holusion's services and activities" %}
       </div>
     </div>
   </div>

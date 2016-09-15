@@ -1,7 +1,14 @@
 ---
 layout: doc-front
 ---
-
 <div class="container">
-  {{content}}
+  <section id="section-tabs">
+    <ul class="nav nav-tabs">
+      {% include navtab_link.html href="compile" title="Compile"%}
+      {% include navtab_link.html href="plugins" title="Plugins"%}
+    </ul>
+  </section>
+  <section id="section-content">
+    {{content}}
+  </section>
 </div>

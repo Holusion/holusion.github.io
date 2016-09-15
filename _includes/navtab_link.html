@@ -1,0 +1,8 @@
+
+{% if page.url contains include.href %}
+<li role="presentation" class="active">
+{%else %}
+<li role="presentation">
+{% endif %}
+  <a href="{{include.href}}">{{include.title}}</a>
+</li>

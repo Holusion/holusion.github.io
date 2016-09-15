@@ -1,5 +1,5 @@
 ---
-  layout: documentation
+  layout: default
   title: Stingray
   abstract: Stingray controllable video playback engine
   lang: en

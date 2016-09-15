@@ -162,23 +162,35 @@ Stingray is still in the early stage, a plugin list should be made available sho
 
 <h1>Contribute</h1>
 
-  <div class="row" style="display:flex;align-items:stretch;">
-    <div class="card-cell"><div class="card">
-        <h2 class="card-title">Make plugins</h2>
-        The easiest way to contribute is to make plugins. Interface Stingray with your controller of choice and publish it. Or keep it private, it's up to you. Head over to the <a href="doc#plugins-abi">plugin ABI</a> page and start upgrading your Stingray.
-    </div></div>
-    <div class="card-cell"><div class="card">
-        <h2 class="card-title"> Request Features</h2>
+<div class="row" style="display:flex;align-items:stretch;">
+  <div class="card-cell"><div class="card">
+      <h2 class="card-title">Make plugins</h2>
+      The easiest way to contribute is to make plugins. Interface Stingray with your controller of choice and publish it. Or keep it private, it's up to you. Head over to the <a href="doc#plugins-abi">plugin ABI</a> page and start upgrading your Stingray.
+  </div></div>
+  <div class="card-cell"><div class="card">
+      <h2 class="card-title"> Request Features</h2>
 
-        See any way to make Stingray better? Request a feature on <a href="https://github.com/holusion/stingray">github</a>.
-    </div></div>
-    <div class="card-cell"><div class="card">
-        <h2 class="card-title">Improve code</h2>
-        Here at <b>holusion</b>, we're no C++ ninjas. Any code review / contribution are welcomed! head to the <a href="https://github.com/holusion/stingray">git</a> and fork!
-    </div></div>
-    <div class="card-cell"><div class="card">
-        <h2 class="card-title">Show what you do</h2>
-        You have used Stingray to do something? Tell us and we'll feature your story <a href="gallery">here</a>.
-    </div></div>
-  </div>
+      See any way to make Stingray better? Request a feature on <a href="https://github.com/holusion/stingray">github</a>.
+  </div></div>
+  <div class="card-cell"><div class="card">
+      <h2 class="card-title">Improve code</h2>
+      Here at <b>holusion</b>, we're no C++ ninjas. Any code review / contribution are welcomed! head to the <a href="https://github.com/holusion/stingray">git</a> and fork!
+  </div></div>
+  <div class="card-cell"><div class="card">
+      <h2 class="card-title">Show what you do</h2>
+      You have used Stingray to do something? Tell us and we'll feature your story <a href="gallery">here</a>.
+  </div></div>
+</div>
+<h1> What's Next?</h1>
+<div class="row">
+  <p>With Stingray, we proved it's now posible to offer real time experience with video decoding. We now want to advance the technology further. We have 3 main improvement points :</p>
+  <h2>Better control options</h2>
+  <p>We need to offer tailor made playback control with more plugins and an improved, deeper ABI</p>
+  <h2>Improved encoding</h2>
+  <p>We're studying modern encoding options. While support is often lacking, they could provide a sweetest spot between a large file size &ndash; I/O congestion &ndash; and max ecompression &ndash; lower decode speed.</p>
+  <p><b>MJPEG-2000</b> and <b>h.264 AVC</b> with intra mode are promising great improvements in file sizes with no decode speed penalty, but they need further testing and carefull selection of decoding libraries.</p>
+  <p>We are also planning to further improve our buffering strategy to provide adaptive decoding that scales well with every system.</p>
+  <h2>Extended personalisation options</h2>
+  <p>We think Stingray meets many use cases and as such we are planning to add a lot of knobs and levers to fine tune it to every particular need. A lot of compile-time or runtime options should be added to test the sweetest functionalitites.</p>
+</div>
 </div>

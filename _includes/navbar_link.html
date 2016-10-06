@@ -1,0 +1,14 @@
+{% assign folder = page.url|remove :".html"|split: "/" %}
+{% assign requestedFolder = include.url|remove: ".html"|split: "/" %}
+
+{% if folder[2] == requestedFolder[2] %}
+  {% assign active= true %}
+{% else %}
+  {% assign active= false %}
+{% endif %}
+<li {% if active==true %}class="active"{% endif %}><a href="{{include.url}}">
+  {{include.title}}
+  {% if active==true %}
+   <span class="sr-only">(current)</span>
+  {%endif %}
+</a></li>

@@ -2,9 +2,6 @@
 layout:
 lang: en
 ---
-
-
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -15,7 +12,7 @@ lang: en
   <script defer="" src="/vendor/jquery/dist/jquery.min.js"></script>
   <script defer="" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="padding:0">
   <section id="section-jumbotron">
     <div style="width:100%;height:300px;background:url('/static/img/focus_vivatech_bandeau_2x.jpg') center/cover;margin-bottom:-75px;"></div>
   </section>
@@ -25,7 +22,7 @@ lang: en
       <div class="row">
         {% include post_thumbnail.html
           url="stingray"
-          image="/stingray/img/logo.svg"
+          image="/stingray/img/logo-16-9.svg"
           title="stingray"
           abstract="Stingray is a new generation video player designed to interact with rich video content" %}
 
@@ -34,6 +31,12 @@ lang: en
           image="/static/img/icon-pixel.svg"
           title="pixel video service"
           abstract="Video delivery service tailor made for the pixel holographic display" %}
+
+        {% include post_thumbnail.html
+          url="/aptly-web-ui"
+          image="/static/img/aptly-ui.svg"
+          title="Aptly Web frontend"
+          abstract="web-based User interface for Aptly deb repository management" %}
 
        {% include post_thumbnail.html
          url="https://holusion.com"

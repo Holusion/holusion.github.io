@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Holusion">
+  <link rel="publisher" href="https://plus.google.com/118076369091699793802"/>
+  <meta name="description" content="Aptly-web-ui is a pure client-side User Interface for Aptly. It aims to provide a clean way to administrate a running Aptly service" />
+  <meta property="og:image" content="/static/img/aptly-ui.png"/>
+  <meta name="twitter:image"  content="/static/img/aptly-ui.png"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en"/>
+  <link rel="canonical" href="https://holusion.github.io{{page.url|replace: ".html", ""}}">
+  <title>{{page.title}} | Aptly UI </title>
+
+  <link href="/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stingray/style.css">
+  <script defer="" src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script defer="" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!--favicons -->
+  {% include favicons.html url="/aptly-web-ui/img/favicons"%}
+  {% include analytics_privacy.html %}
+</head>
+<body>
+  <!-- Page Content -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/aptly"style="background: url(/static/img/aptly-ui.svg) center/contain no-repeat;padding:20px 40px">
+      </a>
+      <a class="navbar-brand" href="/stingray">
+        Aptly UI
+      </a>
+    </div>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+       <ul class="nav navbar-nav">
+         {% include navbar_link.html
+           title="Home"
+           url="/aptly-web-ui/"
+         %}
+
+       </ul>
+     </div>
+   </div>
+  </div>
+
+</nav>
+<a href="https://github.com/sdumetz/aptly-web-ui"><img style="position: absolute; top: 50px; right: 0; border: 0;z-index:1000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+    {{content }}
+
+</body>
+<!-- Footer -->
+</html>

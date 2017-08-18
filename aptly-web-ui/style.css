@@ -1,0 +1,8 @@
+body{
+  padding-top:50px;
+}
+
+h1 {
+  color:#2196F3;
+  width:calc(100% - 90px);
+}
